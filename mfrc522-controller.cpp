@@ -5,6 +5,7 @@
 #define SS_PIN    10    // pin date
 // Pinout si getting started: http://playground.arduino.cc/Learning/MFRC522
 
+MFRC522 mfrc522(SS_PIN, RST_PIN);   // instanta cititor MFRC522
 
 void setup() {
   Serial.begin(9600);  // initializarea comunicarii serial via usb
